@@ -28,8 +28,8 @@ class controller():
     def __init__(self, robot):
         self.robot = robot
         self.Q = np.identity(6)
-        self.position_k = 3
-        self.orientation_k = np.ones((2, 1))*1.5
+        self.position_k = 1.0
+        self.orientation_k = np.ones((2, 1))*1.0
         self.sigularity_k = 0.1
         self.position_b = 0.0
         self.orientation_b = np.ones((2, 1))*math.cos(0./180.0*math.pi)
